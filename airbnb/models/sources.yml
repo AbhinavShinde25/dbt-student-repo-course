@@ -1,0 +1,18 @@
+version: 2
+
+sources:
+  - name: dbt_course
+    schema: raw
+    tables:
+      - name: listings
+        identifier: raw_listings
+    
+      - name: host
+        identifier: raw_hosts
+
+      - name: reviews
+        identifier: raw_reviews
+    
+
+
+
