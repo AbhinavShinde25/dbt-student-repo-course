@@ -1,0 +1,11 @@
+snapshots:
+  - name: scd_raw_listings
+    relation: source('dbt_course', 'listings')
+    config:
+      unique_key: id
+      updated_at: updated_at
+      strategy: timestamp
+      hard_deletes: invalidate
+
+
+
