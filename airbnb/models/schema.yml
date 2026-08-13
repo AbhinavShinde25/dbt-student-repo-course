@@ -1,7 +1,9 @@
 models:
   - name: 'dim_listing_cleansed'
+    description: this is the clean listing data 
     columns:
       - name: 'listing_id'
+        description: primary key of the listing table
         data_tests:
          - unique
          - not_null
@@ -29,13 +31,16 @@ models:
   
 # models:
   - name: 'dim_hosts_cleansed'
+    description:  cleaned table of the host 
     columns:
      - name: 'host_id'
+       description: PRimary Key of host table
        data_tests:
         - unique
         - not_null
       
      - name: 'host_name'
+       description: host name should not be null
        data_tests:
         - not_null
       
